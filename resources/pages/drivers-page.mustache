@@ -1,0 +1,24 @@
+
+<h1>Drivers Page</h1>
+<h2>All Drivers List</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Driver ID</th>
+                <th>NAME AND LAST NAME</th>
+                <th>DATE OF BIRTH</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#drivers}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{dob}}</td>
+                </tr>
+            {{/drivers}}
+        </tbody>
+    </table>
+
+    <a href="/add-driver">Add New Driver</a>
