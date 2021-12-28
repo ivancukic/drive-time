@@ -8,6 +8,8 @@
                 <th>Driver ID</th>
                 <th>NAME AND LAST NAME</th>
                 <th>DATE OF BIRTH</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +18,8 @@
                     <td>{{id}}</td>
                     <td>{{name}}</td>
                     <td>{{dob}}</td>
+                    <td><a href="/updateDriver/{{id}}/updateDriver">edit</a></td>
+                    <td><a href="/drivers/{{id}}/removeDriver">delete</a></td>
                 </tr>
             {{/drivers}}
         </tbody>

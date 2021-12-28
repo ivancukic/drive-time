@@ -1,0 +1,16 @@
+<h1>Update Driver<h1>
+
+
+ <form action="/updateDriver/{{drivers.id}}/updateDriver"   method="POST">
+                                      
+    <label >Name And Last Name:</label><br>
+    <input type="text" name="name"
+                    value="{{drivers.name}}"/><br><br>
+
+    <label >Date Of Birth(YYYY-DD-MM):</label><br>
+    <input type="date" name="dob"
+                    value="{{drivers.dob}}"/><br><br><br>
+    
+
+    <button type="submit" >Save</button>
+</form>

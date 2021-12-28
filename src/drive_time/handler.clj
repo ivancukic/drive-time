@@ -8,10 +8,22 @@
 
 (defroutes public-routes
   (GET "/" [] (controller/home))
+
   (GET "/drivers" [] (controller/drivers-page))
+
   (GET "/add-driver" [] (controller/add-driver-page))
   (POST "/add-driver/insertDriver" [& params]
     (do (driver/insertDriver params)
+        (resp/redirect "/drivers")))
+  
+  (GET "/updateDriver/:id/updateDriver" [id]
+    (controller/update-driver-page id))
+  (POST "/updateDriver/:id/updateDriver" [& params]
+    (do (driver/updateDriver (:id params) params)
+        (resp/redirect "/drivers")))
+  
+  (GET "/drivers/:id/removeDriver" [id]
+    (do (driver/removeDriver id)
         (resp/redirect "/drivers"))))
 
 (defroutes protected-routes)

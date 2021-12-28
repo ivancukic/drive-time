@@ -14,10 +14,14 @@
   (render-template "homepage" {}))
 
 ; Drivers start here
+
 (defn drivers-page []
   (render-template "drivers-page" {:drivers (driver-domain/allDrivers)}))
 
 (defn add-driver-page []
   (render-template "add-driver" {}))
+
+(defn update-driver-page [id]
+  (render-template "update-driver" {:drivers (driver-domain/get id)}))
 
 ; Drivers end here
