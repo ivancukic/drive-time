@@ -1,0 +1,19 @@
+<h1>Add New Line<h1>
+
+ <form action="/add-line/insertLine"   method="POST">
+                                      
+    <label >Name Of Line:</label><br>
+    <input type="text" name="name_of_line"
+                    value="{{#name_of_line}}{{name_of_line}}{{/name_of_line}}"/><br><br>
+
+    <label >Start Time:</label><br>
+    <input type="time" name="start_time "
+                    value="{{#start_time}}{{start_time}}{{/start_time}}"/><br><br><br>
+    
+    <label >End Time:</label><br>
+    <input type="time" name="end_time"
+                    value="{{#end_time}}{{end_time}}{{/end_time}}"/><br><br><br>
+    
+
+    <button type="submit" >Save</button>
+</form>

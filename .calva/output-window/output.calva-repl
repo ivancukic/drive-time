@@ -18,3 +18,333 @@
 clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
+()
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling at (line.clj:49:1).
+; Unable to resolve symbol: local-time in this context
+clj꞉drive-time.entity.line꞉> 
+nil
+; WARNING: update already refers to: #'clojure.core/update in namespace: clojure.java.jdbc.sql, being replaced by: #'clojure.java.jdbc.sql/update
+clj꞉drive-time.entity.line꞉> 
+#object[java.time.LocalTime 0x42ff4601 "10:00"]
+clj꞉drive-time.entity.line꞉> 
+#object[java.time.LocalTime 0x2ef4c7f4 "10:30"]
+clj꞉drive-time.entity.line꞉> 
+#object[java.time.LocalTime 0x4d166cc0 "10:30"]
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/first-time
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/e-time
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:56:1).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:56:1).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:56:1).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/eval12076 (form-init12208388779150390879.clj:56).
+; class java.time.LocalTime cannot be cast to class clojure.lang.IFn (java.time.LocalTime is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+-1
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:34:4).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+nil
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:34:4).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:34:4).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/e-time
+clj꞉drive-time.entity.line꞉> 
+0
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:58:1).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+; Execution error (NullPointerException) at java.time.LocalTime/until (LocalTime.java:1421).
+; null
+clj꞉drive-time.entity.line꞉> 
+; Execution error (NullPointerException) at java.time.LocalTime/until (LocalTime.java:1421).
+; null
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+; Syntax error (IllegalArgumentException) compiling java-time/time-between at (line.clj:58:1).
+; No single method: time_between of interface: java_time.core.KnowsTimeBetween found for function: time-between of protocol: KnowsTimeBetween
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"1"
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.temporal.ValueRange/checkValidValue (ValueRange.java:311).
+; Invalid value for HourOfDay (valid values 0 - 23): 25
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ArityException) at drive-time.entity.line/eval12127 (form-init12208388779150390879.clj:62).
+; Wrong number of args (4) passed to: java-time.amount/duration
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.ZoneOffset/from (ZoneOffset.java:348).
+; Unable to obtain ZoneOffset from TemporalAccessor: 0011-01-01T00:00 of type java.time.LocalDateTime
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at java-time.format/formatter (format.clj:63).
+; class java.lang.Long cannot be cast to class clojure.lang.Named (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.Named is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.ZoneOffset/from (ZoneOffset.java:348).
+; Unable to obtain ZoneOffset from TemporalAccessor: 0011-01-01T00:00 of type java.time.LocalDateTime
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling at (line.clj:62:1).
+; No such var: java-time/interval
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling at (line.clj:62:1).
+; No such var: java-time/interval
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling at (line.clj:34:8).
+; No such var: java-time/interval
+clj꞉drive-time.entity.line꞉> 
+#object[java.time.Duration 0x3206a4e4 "PT1M"]
+clj꞉drive-time.entity.line꞉> 
+#object[java.time.Duration 0x76dcc9e1 "PT1H"]
+clj꞉drive-time.entity.line꞉> 
+#inst "1970-01-01T00:30:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+#inst "1970-01-01T00:30:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+"-9"
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.temporal.ValueRange/checkValidValue (ValueRange.java:311).
+; Invalid value for HourOfDay (valid values 0 - 23): 25
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.temporal.ValueRange/checkValidValue (ValueRange.java:311).
+; Invalid value for HourOfDay (valid values 0 - 23): 24
+clj꞉drive-time.entity.line꞉> 
+"-10"
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+0
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling if at (line.clj:34:2).
+; Too many arguments to if
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:35).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:35).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"-10"
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"-10"
+clj꞉drive-time.entity.line꞉> 
+"0"
+clj꞉drive-time.entity.line꞉> 
+"0"
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+"0"
+clj꞉drive-time.entity.line꞉> 
+"1"
+clj꞉drive-time.entity.line꞉> 
+"-10"
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Syntax error compiling at (line.clj:34:3).
+; Expecting var, but Integer is mapped to class java.lang.Integer
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/total-time-func (form-init12208388779150390879.clj:34).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"1"
+clj꞉drive-time.entity.line꞉> 
+45
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+"1"
+clj꞉drive-time.entity.line꞉> 
+"-10"
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+"1"
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/total-time-func
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+-10
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ClassCastException) at drive-time.entity.line/if-negative-time (form-init12208388779150390879.clj:39).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+-1
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+-1
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+23
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+23
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+14
+clj꞉drive-time.entity.line꞉> 
+-10
+clj꞉drive-time.entity.line꞉> 
+14
+clj꞉drive-time.entity.line꞉> 
+29
+clj꞉drive-time.entity.line꞉> 
+5
+clj꞉drive-time.entity.line꞉> 
+29
+clj꞉drive-time.entity.line꞉> 
+29
+clj꞉drive-time.entity.line꞉> 
+19
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+false
+clj꞉drive-time.entity.line꞉> 
+false
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+25
+clj꞉drive-time.entity.line꞉> 
+#'drive-time.entity.line/if-negative-time
+clj꞉drive-time.entity.line꞉> 
+1
+clj꞉drive-time.entity.line꞉> 
+23
+clj꞉drive-time.entity.line꞉> 
+5
+clj꞉drive-time.entity.line꞉> 
+18
+clj꞉drive-time.entity.line꞉> 
+; Execution error (ExceptionInfo) at java-time.local/local-time (local.clj:32).
+; Could not convert [4 :00:00] to class java.time.LocalTime!
+clj꞉drive-time.entity.line꞉> 
+#inst "0001-12-31T23:00:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 
+; Execution error (DateTimeException) at java.time.temporal.ValueRange/checkValidValue (ValueRange.java:311).
+; Invalid value for DayOfMonth (valid values 1 - 28/31): 2020
+clj꞉drive-time.entity.line꞉> 
+#inst "0001-12-31T23:00:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 
+#inst "1970-01-01T03:00:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 
+#inst "1970-01-01T03:30:00.000-00:00"
+clj꞉drive-time.entity.line꞉> 

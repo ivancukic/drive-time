@@ -3,7 +3,8 @@
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [drive-time.controller.controller :as controller]
-            [drive-time.domain.driver :as driver]
+            [drive-time.entity.driver :as driver]
+            [drive-time.entity.line :as line]
             [ring.util.response :as resp]))
 
 (defroutes public-routes
@@ -15,16 +16,36 @@
   (POST "/add-driver/insertDriver" [& params]
     (do (driver/insertDriver params)
         (resp/redirect "/drivers")))
-  
+
   (GET "/updateDriver/:id/updateDriver" [id]
     (controller/update-driver-page id))
   (POST "/updateDriver/:id/updateDriver" [& params]
     (do (driver/updateDriver (:id params) params)
         (resp/redirect "/drivers")))
-  
+
   (GET "/drivers/:id/removeDriver" [id]
     (do (driver/removeDriver id)
-        (resp/redirect "/drivers"))))
+        (resp/redirect "/drivers")))
+
+  ;lines
+  (GET "/lines" [] (controller/lines-page))
+
+  (GET "/add-line" [] (controller/add-line-page))
+  (POST "/add-line/insertLine" [& params]
+    (do (line/insertLine params)
+        (resp/redirect "/lines")))
+
+  (GET "/updateLine/:id/updateLine" [id]
+    (controller/update-line-page id))
+  (POST "/updateLine/:id/updateLine" [& params]
+    (do (line/updateLine (:id params) params)
+        (resp/redirect "/lines")))
+  
+  (GET "/lines/:id/removeLine" [id]
+    (do (line/removeLine id)
+        (resp/redirect "/lines")))
+  
+  )
 
 (defroutes protected-routes)
 

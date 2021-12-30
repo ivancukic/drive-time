@@ -1,4 +1,4 @@
-(ns drive-time.domain.driver
+(ns drive-time.entity.driver
   (:refer-clojure :exclude [get])
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.java.jdbc.sql :as sql]))

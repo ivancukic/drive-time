@@ -1,0 +1,30 @@
+<h1>Lines Page</h1>
+<h2>All Lines List</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>LINE ID</th>
+                <th>LINE NAME</th>
+                <th>LINE START TIME</th>
+                 <th>LINE END TIME</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#publiclines}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name_of_line}}</td>
+                    <td>{{start_time}}</td>
+                    <td>{{end_time}}</td>
+                    <td>{{total_time}}</td>
+                    <td><a href="/updateLine/{{id}}/updateLine">edit</a></td>
+                    <td><a href="/lines/{{id}}/removeLine">delete</a></td>
+                </tr>
+            {{/publiclines}}
+        </tbody>
+    </table>
+
+    <a href="/add-line">Add New Line</a>
