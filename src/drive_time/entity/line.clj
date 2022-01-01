@@ -25,6 +25,18 @@
   (jdbc/execute! mysql-db
                  ["DELETE FROM publiclines WHERE id = ?" id]))
 
+(defn calcTotalTime []
+  (jdbc/execute! mysql-db
+                 ["UPDATE publiclines SET `total_time`= SUBTIME (end_time, start_time)"]))
+
+(defn negative-time []
+  (jdbc/execute! mysql-db
+                 ["UPDATE publiclines SET total_time = IF (total_time < '00:00:00', ADDTIME(total_time, '24:00:00'), total_time)"]))
+
+(defn num-drivers []
+   (jdbc/execute! mysql-db
+                  ["UPDATE publiclines SET num_drivers = IF (total_time < '08:01:00', 1, IF (total_time < '16:01:00', 2, 3))"]))
+
 (defn updateLine [id params]
   (jdbc/update! mysql-db :publiclines params (sql/where {:id id})))
 
@@ -40,6 +52,12 @@
   (if (neg-int? t)
     (+ t 24)
     t))
+
+(defn total-time [start-time-hours start-time-min end-time-hours end-time-min]
+  (if-negative-time 
+   (total-time-func start-time-hours start-time-min end-time-hours end-time-min)))
+
+(total-time 10 30 1 30)
 
 ; clojure.java-time bolje
 

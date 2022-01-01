@@ -33,6 +33,9 @@
   (GET "/add-line" [] (controller/add-line-page))
   (POST "/add-line/insertLine" [& params]
     (do (line/insertLine params)
+        (line/calcTotalTime)
+        (line/negative-time)
+        (line/num-drivers)
         (resp/redirect "/lines")))
 
   (GET "/updateLine/:id/updateLine" [id]

@@ -8,6 +8,8 @@
                 <th>LINE NAME</th>
                 <th>LINE START TIME</th>
                  <th>LINE END TIME</th>
+                 <th>TOTAL TIME</th>
+                 <th>NUMBER OF DRIVERS NEEDED</th>
                 <th>EDIT</th>
                 <th>DELETE</th>
             </tr>
@@ -20,6 +22,7 @@
                     <td>{{start_time}}</td>
                     <td>{{end_time}}</td>
                     <td>{{total_time}}</td>
+                    <td>{{num_drivers}}</td>
                     <td><a href="/updateLine/{{id}}/updateLine">edit</a></td>
                     <td><a href="/lines/{{id}}/removeLine">delete</a></td>
                 </tr>
