@@ -1,0 +1,22 @@
+<h1>Shift Table</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>LINE NAME</th>
+                <th>SHIFT ONE</th>
+                <th>SHIFT TWO</th>
+                <th>SHIFT THREE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#publiclines}}
+                <tr>
+                    <td>{{name_of_line}}</td>
+                    <td>{{shift_one}}</td>
+                    <td>{{shift_two}}</td>
+                    <td>{{shift_three}}</td>
+                </tr>
+            {{/publiclines}}
+        </tbody>
+    </table>

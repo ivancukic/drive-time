@@ -43,11 +43,23 @@
   (POST "/updateLine/:id/updateLine" [& params]
     (do (line/updateLine (:id params) params)
         (resp/redirect "/lines")))
-  
+
   (GET "/lines/:id/removeLine" [id]
     (do (line/removeLine id)
         (resp/redirect "/lines")))
-  
+
+  (GET "/shiftsPlanning/:id/shiftsPlanning" [id]
+    (controller/shift-planning id))
+  (POST "/updateLine/:id/updateLine" [& params]
+    (do (line/updateLine (:id params) params)
+        (resp/redirect "/lines")))
+
+  (GET "/shift-table" []
+    (controller/shifts-table))
+
+  ;(POST "/shiftsPlanning/:lineId/shiftsPlanning/" [& params]
+  ;  (do (line/shiftPlanning (:lineId params) params)
+  ;      (resp/redirect "/lines")))
   )
 
 (defroutes protected-routes)

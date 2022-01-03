@@ -38,3 +38,14 @@
   (render-template "update-line" {:publiclines (line-entity/get id)}))
 
 ; Lines end here
+; Shifts start here
+
+(defn shifts-table []
+  (render-template "shifts-table" {:publiclines (line-entity/allLines)
+                                   :drivers (driver-entity/allDrivers)}))
+
+(defn shift-planning [lineId]
+  (render-template "shift-planning" {:publiclines (line-entity/get lineId)
+                                     :drivers (driver-entity/allDrivers)}))
+
+; Shifts end here

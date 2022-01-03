@@ -40,6 +40,9 @@
 (defn updateLine [id params]
   (jdbc/update! mysql-db :publiclines params (sql/where {:id id})))
 
+;(defn shiftPlanning [id params]
+;  (jdbc/update! mysql-db :publiclines params (sql/where {:id id})))
+
 (defn insertLine [params]
   (jdbc/insert! mysql-db :publiclines params))
 
