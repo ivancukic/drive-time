@@ -1,0 +1,14 @@
+<h1>Add Shifts For Two Drivers<h1>
+
+ <form action="/updateLine/{{publiclines.id}}/updateLine"   method="POST">
+    
+    <label >Driver One:</label><br>
+    <input type="text" name="shift_one"
+                value="{{publiclines.shift_one}}"/><br><br>
+
+    <label >Driver Two:</label><br>
+    <input type="text" name="shift_two"
+                value="{{publiclines.shift_two}}"/><br><br>
+
+    <button type="submit" >Save</button>
+</form>

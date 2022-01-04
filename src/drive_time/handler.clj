@@ -48,8 +48,20 @@
     (do (line/removeLine id)
         (resp/redirect "/lines")))
 
-  (GET "/shiftsPlanning/:id/shiftsPlanning" [id]
-    (controller/shift-planning id))
+  (GET "/shiftsPlanning/:id/:num_drivers/shiftsPlanning" [id num_drivers]
+    
+    (if (= (Integer. num_drivers) 1)
+      (controller/shift-planning-one id)
+      (if (= (Integer. num_drivers) 2)
+        (controller/shift-planning-two id)
+          (controller/shift-planning-three id)))
+    ;(controller/shift-planning id num_drivers) 
+    
+    ;(str "Tip je " (type num_drivers))
+    ;(Integer. num_drivers)
+    ;(str "Drugi tip" (type (Integer. num_drivers)))
+    
+    )
   (POST "/updateLine/:id/updateLine" [& params]
     (do (line/updateLine (:id params) params)
         (resp/redirect "/lines")))

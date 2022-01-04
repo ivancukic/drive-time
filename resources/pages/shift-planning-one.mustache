@@ -1,0 +1,19 @@
+<h1>Add Shifts For One Drivers<h1>
+
+ <form action="/updateLine/{{publiclines.id}}/updateLine"   method="POST">
+
+    <div class="form-group">
+        <label for="id">Driver One:</label><br>
+        <select name="id" class="form-control" id="id">
+            {{#drivers}}
+                <option value="{{id}}">{{name}}</option>
+            {{/drivers}}
+        </select>
+    </div>
+    
+    ;<label >Driver One:</label><br>
+    ;<input type="text" name="shift_one"
+    ;            value="{{publiclines.shift_one}}"/><br><br>
+
+    <button type="submit" >Save</button>
+</form>
