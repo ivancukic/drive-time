@@ -1,18 +1,43 @@
 <h1>Add Shifts For Three Drivers<h1>
 
- <form action="/updateLine/{{publiclines.id}}/updateLine"   method="POST">
+<form action="/updateLine/{{publiclines.id}}/updateLine"   method="POST">
     
-    <label >Driver One:</label><br>
-    <input type="text" name="shift_one"
-                value="{{publiclines.shift_one}}"/><br><br>
+    <label for="id">Driver One</label>
 
-    <label >Driver Two:</label><br>
-    <input type="text" name="shift_two"
-                value="{{publiclines.shift_two}}"/><br><br>
+    <br><br>
 
-    <label >Driver Three:</label><br>
-    <input type="text" name="shift_three"
-                value="{{publiclines.shift_three}}"/><br><br>
+    <select name="shift_one" id="id">
+        {{#drivers}}
+            <option value="{{name}}">{{name}}</option>
+        {{/drivers}}
+    </select>
+
+    <br><br>
+
+    <label for="id">Driver Two</label>
+
+    <br><br>
+
+    <select name="shift_two" id="id">
+        {{#drivers}}
+            <option value="{{name}}">{{name}}</option>
+        {{/drivers}}
+    </select>
+
+    <br><br>
+
+    <label for="id">Driver Three</label>
+
+    <br><br>
+
+    <select name="shift_three" id="id">
+        {{#drivers}}
+            <option value="{{name}}">{{name}}</option>
+        {{/drivers}}
+    </select>
+
+    <br><br>
+    
 
     <button type="submit" >Save</button>
 </form>
