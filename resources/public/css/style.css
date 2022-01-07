@@ -1,13 +1,30 @@
+
+
 h1 {
 
-    color: red;
+    color: #33332f;
+    font-weight: bold;
+    
 }
 
 body {
     background-color: #DCDCDC;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
 
-    background-color: yellow;
+    background-color: rgb(230, 230, 18);
+}
+
+a {
+
+    color: indianred;
+}
+
+.logo-image{
+    width: 56px;
+    height: 56px;
+    margin-left: 10px;
+    
 }
