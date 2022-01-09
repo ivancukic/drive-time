@@ -7,6 +7,18 @@ h1 {
     
 }
 
+h2 {
+
+    color: #33332f;
+    font-weight: bold;
+}
+
+h3 {
+
+    color: #33332f;
+    font-weight: bold;
+}
+
 body {
     background-color: #DCDCDC;
     font-family: 'Montserrat', sans-serif;
@@ -17,14 +29,40 @@ nav {
     background-color: rgb(230, 230, 18);
 }
 
-a {
-
-    color: indianred;
-}
 
 .logo-image{
     width: 56px;
     height: 56px;
     margin-left: 10px;
     
+}
+
+.btn-dark-custom {
+
+    color: white;
+    background-color: #33332f;
+    border-color: blanchedalmond;
+}
+
+.btn-dark-custom:hover, .btn-dark-custom:focus, .btn-dark-custom:active, .btn-dark-custom.active, .open>.dropdown-toggle.btn-dark-custom {
+    background-color: rgb(230, 230, 18);
+    border-color: blanchedalmond;
+}
+.btn-dark-custom a {
+
+    color: white;
+}
+
+.btn-dark-custom a:hover {
+
+    color: black;
+}
+a {
+    
+    text-decoration: none;
+}
+
+.lin-col {
+
+    color: indianred;
 }

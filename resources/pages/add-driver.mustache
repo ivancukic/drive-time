@@ -1,15 +1,77 @@
-<h1>Add New Driver<h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <form action="/add-driver/insertDriver"   method="POST">
-                                      
-    <label >Name And Last Name:</label><br>
-    <input type="text" name="name"
-                    value="{{#name}}{{name}}{{/name}}"/><br><br>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> 
 
-    <label >Date Of Birth(YYYY-DD-MM):</label><br>
-    <input type="date" name="dob"
-                    value="{{#dob}}{{dob}}{{/dob}}"/><br><br><br>
-    
+    <title>Web App For Drivers</title>
+  </head>
+  <body>
 
-    <button type="submit" >Save</button>
-</form>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/">
+            <div class="logo-image">
+              <img src="images/image__4_.png" class="img-fluid">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="/">Home</a>
+              <a class="nav-item nav-link" href="/drivers">Drivers</a>
+              <a class="nav-item nav-link" href="/lines">Lines</a>
+              <a class="nav-item nav-link" href="/shift-table">Shifts</a>
+            </div>
+          </div>
+        </nav>
+
+      <div class="container">
+
+        <br><br>
+        <h3>Add New Driver<h3>
+        <br><br>
+        <div class="row">
+        
+            <form action="/add-driver/insertDriver"   method="POST">
+
+                <div class="form-group">
+                    <label for="name">Name And Last Name:</label>
+                    <input type="text" name="name" class="form-control" 
+                                                    placeholder="Enter Name And Last Name"
+                                                    value="{{#name}}{{name}}{{/name}}"\><br><br> 
+                </div>
+                <div class="form-group">
+                    <label for="name">Date Of Birth(YYYY-DD-MM):</label>
+                    <input type="date" name="dob" class="form-control" 
+                                                    value="{{#dob}}{{dob}}{{/dob}}"\><br><br> <br>
+                </div>
+
+                <button type="button" class="btn btn-dark-custom">Save</button>
+
+            </form>
+
+        </div>
+        
+        
+      </div>
+
+      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom">
+        <div class="container text-center">
+          <small>Copyright &copy; Ivan Cukic</small>
+        </div>
+      </footer>
+
+  </body>
+</html>
