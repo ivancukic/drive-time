@@ -1,19 +1,82 @@
-<h1>Add New Line<h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <form action="/add-line/insertLine"   method="POST">
-                                      
-    <label >Name Of Line:</label><br>
-    <input type="text" name="name_of_line"
-                    value="{{#name_of_line}}{{name_of_line}}{{/name_of_line}}"/><br><br>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> 
 
-    <label >Start Time:</label><br>
-    <input type="time" name="start_time "
-                    value="{{#start_time}}{{start_time}}{{/start_time}}"/><br><br><br>
-    
-    <label >End Time:</label><br>
-    <input type="time" name="end_time"
-                    value="{{#end_time}}{{end_time}}{{/end_time}}"/><br><br><br>
-    
+    <title>Web App For Drivers</title>
+  </head>
+  <body>
 
-    <button type="submit" >Save</button>
-</form>
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/">
+            <div class="logo-image">
+              <img src="images/image__4_.png" class="img-fluid">
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="/">Home</a>
+              <a class="nav-item nav-link" href="/drivers">Drivers</a>
+              <a class="nav-item nav-link" href="/lines">Lines</a>
+              <a class="nav-item nav-link" href="/shift-table">Shifts</a>
+            </div>
+          </div>
+        </nav>
+
+      <div class="container">
+
+        <br><br>
+        <h3>Add New Line</h3>
+        <br><br>
+        <div class="row">
+        
+            <form action="/add-line/insertLine"   method="POST">
+
+                <div class="form-group">
+                    <label >Name Of Line:</label>
+                    <input type="text" name="name_of_line" class="form-control" 
+                                                    placeholder="Enter Name Of Line"
+                                                    value="{{#name_of_line}}{{name_of_line}}{{/name_of_line}}"\><br><br> 
+                </div>
+                <div class="form-group">
+                    <label for="name">Start Time:</label>
+                    <input type="time" name="start_time" class="form-control" 
+                                                    value="{{#start_time}}{{start_time}}{{/start_time}}"\><br><br> <br>
+                </div>
+                <div class="form-group">
+                    <label for="name">End Time:</label>
+                    <input type="time" name="end_time" class="form-control" 
+                                                    value="{{#end_time}}{{end_time}}{{/end_time}}"\><br><br> <br>
+                </div>
+
+                <button type="submit" class="btn btn-dark-custom">Save</button>
+
+            </form>
+
+        </div>
+        
+        
+      </div>
+
+      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom">
+        <div class="container text-center">
+          <small>Copyright &copy; Ivan Cukic</small>
+        </div>
+      </footer>
+
+  </body>
+</html>
