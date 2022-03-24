@@ -44,19 +44,6 @@
   (render-template "shifts-table" {:publiclines (line-entity/allLines)
                                    :drivers (driver-entity/allDrivers)}))
 
-;(defn shift-planning [id num_drivers]
-;  (
-;   if (= num_drivers 1)
-;    (render-template "shift-planning-one" {:publiclines (line-entity/get id)
-;                                           :drivers (driver-entity/allDrivers)})
-;    (if (= num_drivers 2)
-;      (render-template "shift-planning-two" {:publiclines (line-entity/get id)
-;                                             :drivers (driver-entity/allDrivers)})
-      ;else
-;      (render-template "shift-planning-three" {:publiclines (line-entity/get id)
-;                                               :drivers (driver-entity/allDrivers)})))
-;  )
-
 (defn shift-planning-one [id]
   (render-template "shift-planning-one" {:publiclines (line-entity/get id)
                                          :drivers (driver-entity/allDrivers)}))
@@ -68,8 +55,3 @@
   (render-template "shift-planning-three" {:publiclines (line-entity/get id)
                                          :drivers (driver-entity/allDrivers)}))
 
-
-;(render-template "shift-planning" {:publiclines (line-entity/get lineId)
-;                                   :drivers (driver-entity/allDrivers)})
-
-; Shifts end here

@@ -3,7 +3,6 @@
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.java.jdbc.sql :as sql]
             [java-time :as java-time]
-           ; [clj-time.core :as t]
             ))
 
 (def mysql-db {:subprotocol "mysql"
@@ -40,9 +39,6 @@
 (defn updateLine [id params]
   (jdbc/update! mysql-db :publiclines params (sql/where {:id id})))
 
-;(defn shiftPlanning [id params]
-;  (jdbc/update! mysql-db :publiclines params (sql/where {:id id})))
-
 (defn insertLine [params]
   (jdbc/insert! mysql-db :publiclines params))
 
@@ -62,20 +58,7 @@
 
 (total-time 10 30 1 30)
 
-; clojure.java-time bolje
-
-;(defn tim-w [start-time end-time]
-;  (t/minus (t/local-time end-time) (t/local-time start-time)))
-
-
-;(require 'clj-time.jdbc)
-
-;(t/local-time 10 30)
-;(defn tim-w-end [start-hour-time start-min-time end-hour-time end-min-time]
-;  (t/minus (t/local-time end-hour-time end-min-time) 
-;     (t/local-time start-hour-time start-min-time)))
-
-;(tim-w-end 10 10 20 20)
+; PRACTICE FOR TIME
 (def first-time
   (java-time/local-time 10 30))
 

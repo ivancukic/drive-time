@@ -55,11 +55,6 @@
       (if (= (Integer. num_drivers) 2)
         (controller/shift-planning-two id)
           (controller/shift-planning-three id)))
-    ;(controller/shift-planning id num_drivers) 
-    
-    ;(str "Tip je " (type num_drivers))
-    ;(Integer. num_drivers)
-    ;(str "Drugi tip" (type (Integer. num_drivers)))
     
     )
   (POST "/updateLine/:id/updateLine" [& params]
@@ -68,10 +63,6 @@
 
   (GET "/shift-table" []
     (controller/shifts-table))
-
-  ;(POST "/shiftsPlanning/:lineId/shiftsPlanning/" [& params]
-  ;  (do (line/shiftPlanning (:lineId params) params)
-  ;      (resp/redirect "/lines")))
   )
 
 (defroutes protected-routes)

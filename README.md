@@ -1,3 +1,5 @@
+This Application was made in Clojure, html template is made in Mustache. For Clojure i used Clostache. For web application library i used Ring, Compojure is used for routing library for Ring. Database is MySql.
+
 This App is meant for drivers shifts in public transportation. In one day maximum drive time of one driver is 8:00h,
 so maximum drivers for one day is three. When we make new line we enter start time and end time of line. We will get
 the total time of working hours and number of drivers we need for that line. Dependently of drivers we need for
@@ -19,6 +21,8 @@ we can get one two or three drivers input. That depends of number of drivers we 
 We can select driver from the select-list.
 
 In the shift section we can see the shifts for lines we have. Changes on shifts can be made only on line section.
+
+
 
 
 
